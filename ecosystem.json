@@ -1,0 +1,15 @@
+{
+    "apps":[
+        {
+          "name": "server-log4js-pm2",
+          "script": "bin/www",
+          "instances": 1,
+          "exec_mode": "fork",
+          "combine_logs": false,
+          "env": {
+            "PORT": 6500,
+            "TZ": "Asia/Shanghai"
+          }
+        }
+    ]
+}
